@@ -1,0 +1,115 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+*,
+*:focus{
+box-shadow: none;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+    /* PLACEHOLDER-STYLES */
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    :-moz-placeholder{
+      color: rgba(52, 49, 61, 0.5);
+      opacity: 1;
+    }
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+/* IMG */
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+/* MAIN-CONTENT */
+.main-content{
+    flex-grow: 1;
+}
+.container{
+    display: flex;
+    align-items: center;
+  }
+  .sitenav__list{
+    display: flex;
+    align-items: center;
+  }
+  a{
+    margin-right: 15px;
+    font-size: 24px;
+  }
+  form{
+    margin-right: auto;
+  }
+  .sitenav__item{
+    flex-shrink: 0;
+  }
+  .sitenav__item:not(:last-child){
+    margin-right: 15px;
+  }
+  .sitenav__link{
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 700px) {
+    .sitenav{
+      display: none;
+    }
+  }
+input:not(:focus):not(:placeholder-shown):valid{
+    border-color: green;
+}
+input:not(:focus):not(:placeholder-shown):invalid{
+    border-color: red;
+}
+input:focus + .validation-error,
+input:valid + .validation-error,
+input:placeholder-shown + .validation-error{
+    display: none;
+}
+.btc{
+    display: block;
+}
+/* CSS RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+
+}
